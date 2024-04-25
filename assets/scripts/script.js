@@ -88,8 +88,8 @@ const searchSong=async (songName)=>{
   loader.style.display="none"
   next.style.display="block";
 }
-songSearchName="trending";
-await searchSong("trending");
+songSearchName="trending hindi song";
+await searchSong("trending hindi song");
 
 // Load song initially
 loadSong(songs[songIndex]);
