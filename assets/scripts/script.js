@@ -35,7 +35,7 @@ setInterval(()=>{
 },1000)
 
 searchBtn.addEventListener("click",async()=>{
-  console.log("searching started")
+  
   cover.src="assets/images/loading.gif";
   songs=[]
   loader.style.display="block"
@@ -66,7 +66,7 @@ const formateData=(data)=>{
       duration:formatDuration(ele.duration)
     })
   })
-  console.log(songs)
+  
   finalIndex=songs.length
   loadSong(songs[songIndex]);
 }
