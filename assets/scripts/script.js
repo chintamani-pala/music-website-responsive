@@ -86,7 +86,7 @@ const searchSong=async (songName)=>{
   formateData(songData);
   searchBtn.disabled=false;
   loader.style.display="none"
-  next.style.display="block";
+  //next.style.display="block";
 }
 songSearchName="trending hindi song";
 await searchSong("trending hindi song");
@@ -159,11 +159,11 @@ function gotoPreviousSong() {
 
 // Go to next song
 function gotoNextSong(playImmediately) {
-  if (songIndex === songs.length - 1) {
-    console.log("yes")
+  if (songIndex === songs.length - 3) {
+    //console.log("yes")
     page+=1
     loader.style.display="block";
-    next.style.display="none"
+    //next.style.display="none"
     searchSong(songSearchName);
   } else {
     songIndex = songIndex + 1;
